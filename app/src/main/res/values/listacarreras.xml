@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="carreras">
+        <item>Ing. Informática</item>
+        <item>Ing. en TIC</item>
+        <item>Lic. en Biología</item>
+        <item>Ing. en Agronomía</item>
+        <item>Ing. Forestal</item>
+    </string-array>
+</resources>

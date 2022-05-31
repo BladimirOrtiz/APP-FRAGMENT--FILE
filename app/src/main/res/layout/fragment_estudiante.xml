@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Estudiante">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondoest"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strRegistrar"
+            android:textAlignment="center"
+            android:textColor="#FF5722"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtNControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/strNControl"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/strNombre"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strCarrera"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/cbxCarreras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/carreras" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strSemestre"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/cbxSemestre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Semestres" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strGrupo"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbt_salaA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strGrupoA" />
+
+            <RadioButton
+                android:id="@+id/rbtGrupoB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strGrupoB" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:gravity="center|center_horizontal"
+            android:text="@string/strAlta" />
+
+        <EditText
+            android:id="@+id/txtRegistrosA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+</FrameLayout>
